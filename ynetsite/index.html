@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <style>
+            body {
+               font-family: "narkiss"; 
+            }
+            @font-face {
+                font-family: "narkiss";
+                src: url("NarkissBlock-Medium.woff2") format("woff2");
+                   
+}
+
+            #main-content {
+                /* background-color: red; */
+                width: 65%;
+
+                position: fixed; 
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            #header {
+                width: 100%;
+                height: 150px;
+                /* background-color: red; */
+                display: grid;
+                grid-template-columns: 180fr 110fr 240fr 200fr 200fr 150fr 100fr 100fr;
+                grid-template-rows: 65fr 45fr 25fr 35fr;
+            }
+
+            #logo {
+                grid-column-start: 4;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 3;
+
+                background-image: url('logo.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            #join-now {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3; 
+
+                background-color: blue;
+                color: white;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+            }
+
+            .imglink{
+                display:flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .imglink>img {
+                margin-left: 6px;
+            }
+
+            #main-menu>a {
+                color: white;
+                text-decoration: none;
+            }
+
+            #login {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3; 
+            }
+
+            #highlights {
+                grid-column-start: 8;
+                grid-column-end: 9;
+                grid-row-start: 2;
+                grid-row-end: 3;  
+            }
+
+            #red-mail {
+                grid-column-start: 7;
+                grid-column-end: 8;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            } 
+
+            #weather {
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            #main-menu {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: row-reverse;
+                color: white;
+
+
+
+                background-color: #de1a1a;
+                grid-column-start: 1;
+                grid-column-end: 9;
+                grid-row-start: 4;
+                grid-row-end: 5;
+
+
+            }
+
+            #main-highlights {
+                margin-top: 15px;
+                background-color: #f5fdff;
+                display: flex;                             
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+
+            .highlight-block {
+                padding: 2%;
+            }
+
+            #main-story {
+                margin-top: 2%;
+                height: 350px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+
+            }
+            #main-image {                         
+                background-image: url('SJEdaWk6K_0_0_850_479_0_x-large.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2; 
+            }
+            
+
+            #main-text {
+                padding-left: 10%;                            
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+            }
+             
+            #texters {
+                color: gray;
+                margin-top: 10%;
+            }
+
+            #headlinetext {
+                font-size: 17px;
+            }
+
+            #headline {
+
+                font-size: larger;
+            }
+
+            
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="main-content">
+            <div id="header">
+                <div id="logo">
+                </div>
+
+                <div id="join-now">
+                    ynet+ הצטרפו עכשיו
+                </div>
+                 
+                <div id="login" class = "imglink">
+                    <img src="login.png"/>
+                    התחברות
+                </div>
+
+                <div id="highlights" class = "imglink">
+                    <img src="bell.png"/>
+                    מבזקים
+                </div>
+
+                <div id="red-mail" class = "imglink">
+                    <img src="redmail.png"/>
+                    המייל האדום
+                </div>
+
+                <div id="weather" class = "imglink">
+                    <img src="weather.png"/>
+                    14 תל אביב-יפו
+                </div>
+                
+
+                <div id="main-menu">
+                    <a href="main.html">ראשי</a>
+                    <a href="main.html">ynet+</a>
+                    <a href="main.html">חדשות</a>
+                    <a href="main.html">ספורט</a>
+                    <a href="main.html">כלכלה</a>
+                    <a href="main.html">תרבות</a>
+                    <a href="main.html">רכילות</a>
+                    <a href="main.html">בריאות</a>
+                    <a href="main.html">רכב</a>
+                    <a href="main.html">דיגיטל</a>
+                    <a href="main.html">לאישה</a>
+                    <a id="more-button" href="main.html">עוד</a>
+                </div> 
+            
+            </div>
+
+            <div id = "main-highlights">
+                <div class="highlight-block">                   
+                    <div>
+                        15:09 
+                    </div>
+                    <div>
+                        טורקיה: "שיחות הנורמליזציה עם ארמניה התנהלו באווירה חיובית"
+                    </div>                  
+                </div>
+
+                <div class="highlight-block">                   
+                    <div>
+                        15:34 
+                    </div>
+                    <div>
+                        צעיר נפצע קשה בתאונה סמוך לטמרה יזרעאל
+                    </div>                  
+                </div>
+                <div class="highlight-block">                   
+                    <div>
+                        15:49 
+                    </div>
+                    <div>
+                        האוקיינוס השקט: אזהרת צונאמי בניו זילנד ובטונגה בעקבות התפרצות הר געש
+                    </div>                  
+                </div>
+                <div class="highlight-block">                   
+                    <div>
+                        16:02 
+                    </div>
+                    <div>
+                        אוסטרליה: יותר מ-100,000 נדבקים בקורונה אובחנו ביממה
+                    </div>                  
+                </div>
+                <div class="highlight-block">                   
+                    <div>
+                        16:11 
+                    </div>
+                    <div>
+                        הקורונה בגרמניה: 78,022 חיוביים אובחנו ביממה האחרונה, 235 חולים מתו
+                    </div>                  
+                </div>
+                <div class="highlight-block">                                   
+                    לכל המבזקים                
+                </div>
+
+            </div>
+            <div id = "main-story">
+                <div id = "main-image"></div>
+                <div id = "main-text">
+                    <div>14.1.22|י"ב בשבט התשפ"ב</div>
+                    <div id = "headline"><H1>המאבטח שרכבו הוצת במהומות בנגב: "דפקו לי אגרוף, נתתי ספרינט"</H1></div>
+                    <div id = "headlinetext">י', סטודנט שעובד כמאבטח בנקודת המשטרה בתל שבע, נקלע להתפרעויות בנגב ומספר בשיחה עם ynet על רגעי הבהלה: הוא נעצר במחסום מאולתר של המתפרעים, הוכה בפתאומיות - וברח למחסה במבנה שעליו היה אמור לשמור. "זה היה יכול להיגמר אחרת, למה אלו שמחליטים חושבים שזה משחק?"</div>
+                    <div id = "texters">איתמר,אייכנר,מורן אזולאי,גלעד מורג</div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
+
+</html>

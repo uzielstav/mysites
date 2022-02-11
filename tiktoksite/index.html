@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            #main-content {               
+                width: 70%;
+
+                position: fixed; 
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            #header {
+                width: 100%;
+                height: 45px;
+                display: grid;
+                grid-template-columns: 180fr 110fr  200fr 150fr 60fr 60fr 60fr;
+            }
+            #logo {
+                grid-column-start: 1;
+                grid-column-end: 2;
+
+                background-image: url('tiktoklogo.png');
+                background-size: contain ;
+                background-repeat: no-repeat;
+                background-position: left;
+            }
+            #rightheader {
+                grid-column-start: 5;
+                grid-column-end: 7;
+                display:flex;
+                align-content: center;
+                align-items: center;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            #upload {
+                padding-right: 15px;        
+            }
+
+            #login {
+                padding-right: 30px;
+                padding-left: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #fc2c56;
+                color: white;
+                border-radius: 5px;
+                
+            }
+
+            #dots {
+                padding-left: 15px;
+            }
+            #mainstory{
+                margin-top: 80px;
+            }
+                
+            
+            #left-side {
+                width: 30%;
+                height: 1000px;
+                align-content: left;
+                display: grid;
+                grid-template-rows: 100fr 90fr 170fr 80fr 120fr;
+
+            }
+            .leftsidebtn a {
+                text-decoration: none;
+                color: black;               
+
+            }
+            .leftsidebtn a:hover {
+                color: #fc2c56;
+                transition-duration: 0.4s;
+            } 
+            #logtext {
+                color: gray;
+                width: 90%;
+            } 
+            
+            #login1{
+                width: 90%;
+                margin-top: 35px;
+                background-color: white;
+                text-align: center;
+                color: #fc2c56; 
+                border:1px solid #fc2c56;
+                border-radius: 5px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                font-size: 20px;
+            }
+
+            #sgsacctext {
+                margin-top: 40px;
+                color: rgb(78, 77, 77);
+                font-size: 15px;
+            }
+            .sgsacc {
+                padding-top: 5px;
+                font-weight: bold;
+            }
+            #seeallsgs {
+                padding-top: 7px;
+                color: #fc2c56;
+                font-weight:  bold ;
+                font-size: 12px;
+                
+            }
+            #discover {
+                padding-top :40px;
+                color: rgb(73, 73, 73);
+            }
+            #hashtags {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .hashtags {
+                margin-top: 25px;
+                padding-left: 10px;        
+                color: gray;
+            }
+            #tightmenu {
+                width: auto;
+                margin-left: 80px;           
+            }
+            #pfp {
+                background-image: url('pfp.png');
+            }
+            #post {
+                width: 100%;
+            }
+
+
+
+
+
+        </style>
+
+    </head>
+    <body> 
+        <!-- search bar -->
+        <div id = "main-content">
+           
+            <div id = "header">
+               
+                <div id = "logo"></div>
+               
+                <div id = "search-bar"></div>
+                
+                <div id = "rightheader">
+                    <div id = "upload">Upload</div>               
+                    <div id = "login">Log in</div>
+                    <div id = "dots">...</div>
+                </div>
+                               
+            </div>
+            <!-- לזכור את הלוגואים -->
+
+            <div id = "mainstory">
+                <div id = "left-side">
+    <!-- לסיים את כל החלק הזה כמו בטיקטוק ולשאול את איתמר איך מעתיקים את הלוגואים ולהמשיך את כל הסיידמניו -->
+                    <div id = "sidemenu"><h2>
+                            <div class = "leftsidebtn"><a href = "for you"> For You</a></div>
+                                <div class = "leftsidebtn"><a href = "for you">Following</a></div>
+                                <div class = "leftsidebtn"><a href = "for you">Live</a></div>
+                        </h2>
+                            <div id = "logtext">Log in to follow creators, like videos, and view comments.</div>
+                            <h2><div id = "login1">Log In</div></h2>
+
+                            <div id = "sgsacctext">Suggested accounts</div>
+
+                            <div class = "sgsacc"> pewdiepie </div>
+                            <div class = "sgsacc"> mrbeast </div>
+                            <div class = "sgsacc"> shroud </div>
+                            <div class = "sgsacc"> techsource </div>
+                            <div class = "sgsacc"> theoffspring </div>
+
+                            <div id = "seeallsgs"> see all </div>
+
+                            <div id = "discover">Discover</div>
+                        <div id = hashtags>
+                            <div class = hashtags>המצעד#21</div>
+
+                            <div class = hashtags>   #ספיידרמן</div>
+                                
+                            <div class = hashtags>    #סופגניה</div>
+                                
+                            <div class = hashtags>    #די_לאלימות_נגד_נשים</div>
+                                
+                            <div class = hashtags>    #סובסוב</div>
+                        </div>
+
+                        
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div id = "rightmenu">
+                    <div id = "post">
+                        <img id="pfp.png" src="C:\Users\uziel\OneDrive\Desktop\Stav&Itke\tiktok\pfp.png">
+                        <div id = "usercontent"></div>
+                            <div id = username>pepe</div>
+                            <div id = desc>33 #fyp #foryou #arianagrande #viral #sound #thevoice #jimandsashaallen</div>
+                        <div id = "sound">original sound - jazelle // moved to rebelvelo</div>
+                        <div id = "video"></div>
+                        <div id = "like"></div>
+                        <div id = "comments"></div>
+                        <div id = "share"></div>
+                    </div>
+           </div> 
+           </div>
+        </div>
+        
+    </body>
+</html>
